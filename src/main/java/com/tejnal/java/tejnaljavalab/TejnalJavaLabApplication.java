@@ -2,6 +2,8 @@ package com.tejnal.java.tejnaljavalab;
 
 import com.tejnal.java.tejnaljavalab.annotations.MyCustomAnnotation;
 import com.tejnal.java.tejnaljavalab.annotations.UseCustomAnnotation;
+import com.tejnal.java.tejnaljavalab.collectionslab.CompareMapByKeys;
+import com.tejnal.java.tejnaljavalab.datatypeslab.DataTypesDemo;
 import com.tejnal.java.tejnaljavalab.enumeration.Color;
 import com.tejnal.java.tejnaljavalab.serializationd.Student;
 import org.springframework.boot.SpringApplication;
@@ -22,6 +24,10 @@ public class TejnalJavaLabApplication {
         demoCustomAnnotation();
 
         demoSerialization();
+
+        CompareMapByKeys compareMapByKeys = new CompareMapByKeys();
+        compareMapByKeys.clientMap();
+        varagsExamples();
     }
 
     //enumeration demo
@@ -94,6 +100,16 @@ public class TejnalJavaLabApplication {
         } catch (IOException | ClassNotFoundException e) {
             System.out.println(" Exception  is caught");
         }
+    }
+
+
+    public static void varagsExamples() {
+        DataTypesDemo dataTypesDemo = new DataTypesDemo();
+        dataTypesDemo.studentInfo("mike", 24, 89,90,92,95);
+        dataTypesDemo.studentInfo("charlie ", 27, 78,92,69,89);
+        dataTypesDemo.studentInfo("Intu", 31, 90,78,88,90);
+
+
     }
 
 

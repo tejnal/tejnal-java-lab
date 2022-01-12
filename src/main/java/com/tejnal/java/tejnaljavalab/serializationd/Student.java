@@ -1,12 +1,7 @@
 package com.tejnal.java.tejnaljavalab.serializationd;
 
-import java.beans.Transient;
 import java.io.Serializable;
 
-/**
- * @project tejnal-java-lab
- * @autor tejnal on 2022-01-10
- */
 public class Student implements Serializable {
 
     private static final long serialVersionUID = 1L;

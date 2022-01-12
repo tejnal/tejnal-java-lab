@@ -23,6 +23,34 @@
       
       
  5) MultiThreading in Java 
+        --> Difference between thread and runnable
+        --> Threads will run in parallel and not in sequence 
+        --> Objects has properties and states 
+        --> Two threads trying to access same objects?
+        --> Intrinsic Locks and synchronization ?
+        --> Method synchronized or thread sensitive code block 
+        --> DeadLock 
+        --> Fork-join framework for compute intensive tasks, the fork-join framework
+           distribute a certain task on several workers [https://www.geeksforgeeks.org/forkjoinpool-class-in-java-with-examples/, https://www.vogella.com/tutorials/JavaConcurrency/article.html#completablefuture]
+        
+ 
+ 6) Functional Interface 
+ 
+        --> It has single ABSTRACT method 
+        
+ 7) Auto boxing unboxing 
+        --> Automatic conversion  between primitive dataTypes and their wrapper class [ vise versa]
+
+8)  I/O streams in java 
+
+        --> fies, devices 
+        --> input and output travel via streams
+        --> Input stream and output stream 
+        --> 
+ 
+ 
+ 
+ 
  
 
       
