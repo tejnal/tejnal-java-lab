@@ -64,7 +64,11 @@
  * know much information about Collections and Comparator 
  
  
- 
+### Topic : conditional loops 
+ switch statement 
+  --> it doesn't support data type long 
+  --> what to choose between if else and switch?
+  
  
  
 
