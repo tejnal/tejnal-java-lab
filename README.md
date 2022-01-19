@@ -36,7 +36,8 @@
  
  6) Functional Interface 
  
-        --> It has single ABSTRACT method 
+        --> Any interface that has only  method is known  as functional interface 
+        
         
  7) Auto boxing unboxing 
         --> Automatic conversion  between primitive dataTypes and their wrapper class [ vise versa]
@@ -47,6 +48,20 @@
         --> input and output travel via streams
         --> Input stream and output stream 
         --> 
+ 
+ 
+9) Working with LocalDateTim?
+
+
+### Topic: Java 8 Streams & Lambda's and functional programming
+
+ * function take one argument and produce one result and
+ * Bi-function takes two arguemnts and produces one result 
+ * Consumer  takes one argument  return void 
+ 
+ * Lambda Expressions enable you to encapsulate a single unit of behavior and pass it to other code.
+ * lambda expression used for to write less efficiens
+ * know much information about Collections and Comparator 
  
  
  

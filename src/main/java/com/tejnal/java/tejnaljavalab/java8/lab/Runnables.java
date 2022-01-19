@@ -1,4 +1,4 @@
-package com.tejnal.java.tejnaljavalab.java8.lambdaslab;
+package com.tejnal.java.tejnaljavalab.java8.lab;
 
 import java.util.concurrent.Callable;
 

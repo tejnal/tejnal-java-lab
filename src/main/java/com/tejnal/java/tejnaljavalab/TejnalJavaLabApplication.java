@@ -5,6 +5,9 @@ import com.tejnal.java.tejnaljavalab.annotations.UseCustomAnnotation;
 import com.tejnal.java.tejnaljavalab.collectionslab.CompareMapByKeys;
 import com.tejnal.java.tejnaljavalab.datatypeslab.DataTypesDemo;
 import com.tejnal.java.tejnaljavalab.enumeration.Color;
+import com.tejnal.java.tejnaljavalab.java8.lab.Average;
+import com.tejnal.java.tejnaljavalab.java8.lab.FuncInterfaceExamples;
+import com.tejnal.java.tejnaljavalab.java8.lab.LambdaExamples;
 import com.tejnal.java.tejnaljavalab.serializationd.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -28,6 +31,35 @@ public class TejnalJavaLabApplication {
         CompareMapByKeys compareMapByKeys = new CompareMapByKeys();
         compareMapByKeys.clientMap();
         varagsExamples();
+
+        //lambda example
+        lambdaExample();
+
+        //sort a list compare by age
+        LambdaExamples.comparatorExampleWithLambda();
+
+        LambdaExamples.forEachExampleWithLambdaExample();
+
+        //iterate HashMap
+        LambdaExamples.iterateHashMapWithLambda();
+
+        // predicate example
+        FuncInterfaceExamples.predicateExample();
+
+        // functional interface
+        FuncInterfaceExamples.functionExample();
+
+        //supplier LambdaExamples
+        FuncInterfaceExamples.supplierExample();
+
+        //consumer example
+        FuncInterfaceExamples.consumerExample();
+
+        //biconsumer example
+        FuncInterfaceExamples.biConsumerExample();
+
+        //bipredicate example
+        FuncInterfaceExamples.biPredicateDemo();
     }
 
     //enumeration demo
@@ -85,7 +117,6 @@ public class TejnalJavaLabApplication {
         }
 
         //Deserialization
-
         FileInputStream fileIn;
         ObjectInputStream objIn;
 
@@ -111,6 +142,29 @@ public class TejnalJavaLabApplication {
 
 
     }
+
+    public static void lambdaExample() {
+       Average withLambda = (lambdaArray)-> {
+
+           double sum= 0;
+           int arraySize = lambdaArray.length;
+
+           System.out.println("arraySize: " + arraySize);
+
+           for(int i=0; i < lambdaArray.length; i++){
+               sum = sum + lambdaArray[i];
+           }
+           System.out.println("sum : " + sum);
+
+           return (sum/arraySize);
+
+       };
+
+       int[] lambdaArray = {4, 8, 5, 9, 8};
+        System.out.println(withLambda.avg(lambdaArray));
+    }
+
+
 
 
 }

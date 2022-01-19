@@ -1,4 +1,4 @@
-package com.tejnal.java.tejnaljavalab.java8.lambdaslab.scope;
+package com.tejnal.java.tejnaljavalab.java8.lab.scope;
 
 /**
  * @project tejnal-java-lab

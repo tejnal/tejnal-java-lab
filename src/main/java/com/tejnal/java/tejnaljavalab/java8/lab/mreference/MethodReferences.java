@@ -1,4 +1,4 @@
-package com.tejnal.java.tejnaljavalab.java8.lambdaslab.mreference;
+package com.tejnal.java.tejnaljavalab.java8.lab.mreference;
 
 /**
  * @project tejnal-java-lab
