@@ -23,6 +23,8 @@
       
       
  5) MultiThreading in Java 
+        --> this is opposite to sequential programming 
+        --> Parallel execution --> throughput 
         --> Difference between thread and runnable
         --> Threads will run in parallel and not in sequence 
         --> Objects has properties and states 
@@ -32,6 +34,33 @@
         --> DeadLock 
         --> Fork-join framework for compute intensive tasks, the fork-join framework
            distribute a certain task on several workers [https://www.geeksforgeeks.org/forkjoinpool-class-in-java-with-examples/, https://www.vogella.com/tutorials/JavaConcurrency/article.html#completablefuture]
+       --> single program multiple data 
+       --> Muilti program multiple data 
+       --> memory and processor 
+       --> Shared memory --> UML NUML 
+       --> symmetric multiprocessing 
+       --> Cache coherence
+       --> Distributed memory architecture 
+       --> Process will be managed by operating system  
+       
+       --> Inter process communication 
+       --> Threads are lightweight, process are  resource intensive 
+       --> Concurrency --> with single processor does n't mean parallel programming 
+       --> Parallel hardware -require multi core processing 
+       --> parallel execution -- real useful computation programming 
+       --> Os scheduler threads --  
+       --> Scheduler  user algorithms which has different criteria like 
+           * First come and first served 
+           * Shortest job next 
+           * priority 
+           * Round robin 
+           * Multiple level queues 
+       --> What is Thread Life cycle ?
+       create a thread --> Start --> Runnable mode --> Blocked --> Terminated  
+       thread is waiting not using any CPU resources 
+       
+       
+    
         
  
  6) Functional Interface 
@@ -68,9 +97,40 @@
  switch statement 
   --> it doesn't support data type long 
   --> what to choose between if else and switch?
+  --> Nested loops , branching 
+  
+### Topic: Java Objected approach 
+  -> Class Anatomy 
+     access modifiers, keyword, class name, super class extention/ interfaces , fields, Methods
+  -> Constructor 
+           special method to initialize methods 
+           we can call one constructor from another constructor 
+           constructor can be use access modifier 
+  
+  -> Initialization blocks 
+      static and non static 
+      
+  -> Garbage collection
+        memory is freed up automatically 
+        
+  
+### Topic: Exception handling 
+  --> Manully thrown exception and system generated exception 
+  --> JVM has default handler that will take care of this
+  --> If wont handle jvm will do throws exception and terminates the program 
+  --> Handling exception main benefits 
+        We could clear readable message what went wrong
+        program wont terminate automatically 
+        
+  --> Multiple exception handling 
+  --> unchecked exceptions -- this can caught and throw @ run time only 
+  --> checked exceptions caught at compile --https://www.baeldung.com/java-chained-exceptions
+  --> What does mean chained exceptions?
+  --> additional features -- leave the resources, multi catch 
+  
   
  
- 
+
 
       
  

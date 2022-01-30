@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public class CompareMapByKeys {
 
-    public Map<String, String>  clientMap() {
+    public Map<String, String>  clientMap() throws Exception{
 
         Map<String, String> bankNames   = new LinkedHashMap<>();
 

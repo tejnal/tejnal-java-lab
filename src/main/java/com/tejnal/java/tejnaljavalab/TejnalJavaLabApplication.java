@@ -3,18 +3,23 @@ package com.tejnal.java.tejnaljavalab;
 import com.tejnal.java.tejnaljavalab.annotations.MyCustomAnnotation;
 import com.tejnal.java.tejnaljavalab.annotations.UseCustomAnnotation;
 import com.tejnal.java.tejnaljavalab.collectionslab.CompareMapByKeys;
+import com.tejnal.java.tejnaljavalab.conditionalloops.ConditionalLoopsLab;
 import com.tejnal.java.tejnaljavalab.datatypeslab.DataTypesDemo;
 import com.tejnal.java.tejnaljavalab.enumeration.Color;
 import com.tejnal.java.tejnaljavalab.java8.lab.Average;
 import com.tejnal.java.tejnaljavalab.java8.lab.FuncInterfaceExamples;
 import com.tejnal.java.tejnaljavalab.java8.lab.LambdaExamples;
+import com.tejnal.java.tejnaljavalab.oopslab.candbdemo.FlightPlan;
 import com.tejnal.java.tejnaljavalab.serializationd.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.*;
 import java.lang.reflect.Method;
+import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.locks.Condition;
 
 @SpringBootApplication
 public class TejnalJavaLabApplication {
@@ -60,6 +65,36 @@ public class TejnalJavaLabApplication {
 
         //bipredicate example
         FuncInterfaceExamples.biPredicateDemo();
+
+        // Conditional loops
+
+        ConditionalLoopsLab.demoArraysForLoop();
+
+        ConditionalLoopsLab.doNestedArrayLoop();
+
+        ConditionalLoopsLab.nestedForEachLoop();
+
+        ConditionalLoopsLab.demoContinueStatement();
+
+        // class and objets
+        // Partial flight plan
+        FlightPlan berlinToBucharest = new FlightPlan(
+                "BER",
+                "OTP"
+        );
+        berlinToBucharest.print();
+
+        System.out.println();
+
+        // Complete flight plan
+        FlightPlan parisToLondon = new FlightPlan(
+                "CDG",
+                "LHR",
+                LocalDateTime.of(2020, 01, 10, 23, 15),
+                List.of("CDG", "FARAR", "BAYKA", "DUDES", "LHR")
+        );
+        parisToLondon.print();
+
     }
 
     //enumeration demo
